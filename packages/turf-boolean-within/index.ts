@@ -22,7 +22,7 @@ import { Position as GeojsonPosition,
  * turf.booleanWithin(point, line);
  * //=true
  */
-function booleanWithin(feature1: Feature<any> | Geometry, feature2: Feature<any> | Geometry): boolean {
+export function booleanWithin(feature1: Feature<any> | Geometry, feature2: Feature<any> | Geometry): boolean {
     var type1 = getType(feature1);
     var type2 = getType(feature2);
     var geom1 = getGeom(feature1);
@@ -220,5 +220,3 @@ function compareCoords(pair1: GeojsonPosition, pair2: GeojsonPosition) {
 function getMidpoint(pair1: GeojsonPosition, pair2: GeojsonPosition) {
     return [(pair1[0] + pair2[0]) / 2, (pair1[1] + pair2[1]) / 2];
 }
-
-export default booleanWithin;

@@ -24,7 +24,7 @@ import { Feature, Geometry } from '@turf/helpers';
  * turf.booleanOverlap(poly2, poly3)
  * //=false
  */
-function booleanOverlap(feature1: Feature<any> | Geometry, feature2: Feature<any> | Geometry): boolean {
+export function booleanOverlap(feature1: Feature<any> | Geometry, feature2: Feature<any> | Geometry): boolean {
     // validation
     if (!feature1) throw new Error('feature1 is required');
     if (!feature2) throw new Error('feature2 is required');
@@ -71,5 +71,3 @@ function booleanOverlap(feature1: Feature<any> | Geometry, feature2: Feature<any
 
     return overlap > 0;
 }
-
-export default booleanOverlap;

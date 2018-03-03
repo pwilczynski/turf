@@ -2,9 +2,11 @@
   "name": "@turf/boolean-overlap",
   "version": "5.1.5",
   "description": "turf boolean-overlap module",
-  "main": "index",
+  "main": "index.js",
+  "types": "index.d.ts",
   "files": [
     "index.js",
+    "index.d.ts",
     "index.ts"
   ],
   "scripts": {
